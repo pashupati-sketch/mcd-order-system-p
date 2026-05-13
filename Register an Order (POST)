@@ -1,0 +1,11 @@
+curl -X POST http://localhost:8080/api/orders \
+-H "Content-Type: application/json" \
+-d '{
+  "terminalNo": "25S99-1",
+  "messageType": "ORDER_CONFIRM",
+  "totalAmount": 750,
+  "items": [
+    {"menuName": "Hamburger", "unitPrice": 200, "quantity": 2},
+    {"menuName": "Fries", "unitPrice": 350, "quantity": 1}
+  ]
+}'

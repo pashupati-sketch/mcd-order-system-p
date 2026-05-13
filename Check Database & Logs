@@ -1,0 +1,5 @@
+# View Database content
+sqlite3 order.db "SELECT * FROM order_items;"
+
+# View Logs
+cat logs/order.log

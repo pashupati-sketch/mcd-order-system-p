@@ -1,0 +1,4 @@
+# Replace 0513-001 with your actual order number
+curl -X PUT http://localhost:8080/api/orders/0513-001/status \
+-H "Content-Type: application/json" \
+-d '{"orderStatus": "Cooking Completed"}'
